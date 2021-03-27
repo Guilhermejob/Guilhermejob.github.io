@@ -26,7 +26,8 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
     --corFooter:#04133d; 
     --Bordas:rgba(130, 189, 199, 0.527);
     --corlinks: #F8F8FF;
-    --corbordas:#d4e9ff
+    --corbordas:#d4e9ff;
+    --corinfheader: #000;
 
 }
 .conteiner{
@@ -77,7 +78,8 @@ header .coluna-esquerda img{
 }
 header .coluna p{
     font-size: 1rem;
-    color: var(--corDeTextoPrimaria);
+    color: var(--corinfheader);
+    margin-bottom: 16px;
     
 }
 header .coluna h1{
@@ -91,11 +93,12 @@ header .coluna ul{
     
 }
 header .coluna ul li{
-    margin: 0 0 12px;
+    margin: 0 0 5px;
+    
 }
 header .coluna ul li a{
     font-size: 1rem;
-    color:  var(--corDeTextoPrimaria);
+    color: var(--corinfheader);
 }
 /*FOOTER*/
 footer{
@@ -222,6 +225,7 @@ label span{
     --corFooter:#daa520;
     --Bordas: #daa52091;
     --corbordas: #daa52091;
+    --corinfheader:#fff;
     
 }
 .ativar-dark:checked  ~ .dark-mode main{
