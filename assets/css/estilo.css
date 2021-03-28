@@ -25,7 +25,7 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
     --corHeader:#302875;
     --corFooter:#04133d; 
     --Bordas:rgba(130, 189, 199, 0.527);
-    --corlinks: #F8F8FF;
+    --corlinks: #ffffff;
     --corbordas:#d4e9ff;
     --corinfheader: #000;
 
@@ -78,7 +78,7 @@ header .coluna-esquerda img{
 }
 header .coluna p{
     font-size: 1rem;
-    color: var(--corinfheader);
+    color: var(--corlinks);
     margin-bottom: 16px;
     
 }
@@ -98,7 +98,7 @@ header .coluna ul li{
 }
 header .coluna ul li a{
     font-size: 1rem;
-    color: var(--corinfheader);
+    color: var(--corlinks);
 }
 /*FOOTER*/
 footer{
@@ -226,6 +226,7 @@ label span{
     --Bordas: #daa52091;
     --corbordas: #daa52091;
     --corinfheader:#fff;
+    --corNoCelularNot: #1f1f1f;
     
 }
 .ativar-dark:checked  ~ .dark-mode main{
@@ -267,8 +268,23 @@ label span{
      
 }
 
+@media only screen and (max-width: 767px){
+    
+    .ativar-dark:checked  ~ .dark-mode header{
+        background-color : var(--corNoCelularNot)
+    }
+   
+    
+}
 @media only screen and (min-width: 768px){
   
+    header .coluna ul li a{
+        color: var(--corDeTextoSecundaria);
+    }
+    header .coluna p{
+        color: var(--corDeTextoSecundaria);   
+    }
+    
     .linha{
         display: flex;
         flex-wrap: wrap;
